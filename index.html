@@ -16,11 +16,7 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      margin: 0;
-    }
-    
-    main {
-      flex: 1;
+      justify-content: flex-start; /* স্ক্রিনের উপরের দিকে রাখবে */
     }
     
     header {
@@ -33,11 +29,12 @@
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     .container {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 30px;
+      max-width: 600px;
+      margin: 20px auto; /* উপরের দিকে নিতে হলে margin-top কম রাখুন */
+      padding: 20px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     .box {
       background-color: #fff0f5;
